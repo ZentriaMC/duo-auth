@@ -1,0 +1,37 @@
+[package]
+name = "duo-auth"
+version = "0.0.1"
+edition = "2021"
+license = "MIT"
+description = "Unofficial Rust API bindings for Duo Auth"
+homepage = "https://github.com/ZentriaMC/duo-auth-rs"
+repository = "https://github.com/ZentriaMC/duo-auth-rs"
+readme = "README.md"
+keywords = ["duo-auth"]
+categories = ["api-bindings"]
+
+exclude = [
+    ".direnv",
+    ".editorconfig",
+    ".envrc",
+    ".gitignore",
+    "Cargo.lock",
+    "flake.lock",
+    "flake.nix",
+    "rust-toolchain.toml",
+]
+
+[dependencies]
+chrono = "0.4"
+hex = "0.4"
+hmac = { version = "0.12", features = ["std"] }
+reqwest = { version = "0.11", features = ["json"] }
+serde = "1.0"
+serde_json = "1.0"
+serde_with = "3.2"
+sha1 = "0.10"
+structstruck = "0.4"
+thiserror = "1.0"
+tokio = { version = "1.29", features = ["time"] }
+url = "2.4"
+urlencoding = "2.1"
